@@ -1,0 +1,154 @@
+# Project Information
+site_name: AI for Trading
+site_description: A comprehensive guide to AI and Machine Learning applications in trading and quantitative finance
+site_author: AI Trading Team
+site_url: https://wiki.tauric.ai
+strict: false
+
+# Repository
+repo_name: 'TauricResearch/Trading-Wiki'
+repo_url: 'https://github.com/TauricResearch/Trading-Wiki'
+edit_uri: 'https://wiki.tauric.ai/edit-landing/?ref='
+
+# Copyright
+copyright: 'Copyright &copy; 2024 Tauric Research'
+
+# Contents
+nav:
+  - Home: index.md
+  - I. Market Foundations:
+    - Overview: foundations/index.md
+    - A. Introduction to Financial Markets: foundations/introduction.md
+    - B. Market Structure and Venues: foundations/market-structure.md
+    - C. Market Participants and Roles: foundations/participants.md
+    - D. Basic Trading Terminology and Concepts: foundations/terminology.md
+    - E. Order Types and Execution Mechanics: foundations/order-types.md
+  - II. Asset Classes:
+    - Overview: assets/index.md
+    - A. Equities (Stocks): assets/equities.md
+    - B. Fixed Income (Bonds): assets/bonds.md
+    - C. Commodities: assets/commodities.md
+    - D. Foreign Exchange (Forex): assets/forex.md
+    - E. Derivatives: assets/derivatives.md
+    - F. Alternative Investments: assets/alternative.md
+  - III. Quantitative Finance:
+    - Overview: quant-finance/index.md
+    - A. Mathematical and Statistical Foundations: quant-finance/math-foundations.md
+    - B. Stochastic Processes in Finance: quant-finance/stochastic.md
+    - C. Time Series Analysis: quant-finance/time-series.md
+    - D. Asset Pricing Theory: quant-finance/pricing.md
+    - E. Financial Modeling and Valuation: quant-finance/modeling.md
+  - IV. Trading Strategies:
+    - Overview: strategies/index.md
+    - A. Fundamental Analysis: strategies/fundamental.md
+    - B. Technical Analysis: strategies/technical.md
+    - C. Algorithmic Trading: strategies/algo-trading.md
+    - D. Common Strategy Types:
+      - Trend Following: strategies/trend-following.md
+      - Mean Reversion: strategies/mean-reversion.md
+      - Statistical Arbitrage: strategies/stat-arb.md
+      - Event-Driven Trading: strategies/event-driven.md
+      - Market Making: strategies/market-making.md
+    - E. Risk Management Techniques: strategies/risk-management.md
+  - V. AI for Trading:
+    - Overview: ai-ml/index.md
+    - A. Introduction to AI/ML Concepts: ai-ml/concepts.md
+    - B. Supervised Learning: ai-ml/supervised.md
+    - C. Unsupervised Learning: ai-ml/unsupervised.md
+    - D. Reinforcement Learning: ai-ml/reinforcement.md
+    - E. Feature Engineering: ai-ml/feature-engineering.md
+    - F. Model Validation: ai-ml/validation.md
+    # - G. AI/ML Applications: ai-ml/applications.md
+  - VI. LLM Trading:
+    - Overview: llm/index.md
+    - A. LLM Fundamentals: llm/fundamentals.md
+    - B. Financial Data Analysis: llm/data-analysis.md
+    - C. Code Generation: llm/code-generation.md
+    - D. LLM Agents: llm/agents.md
+    - E. Challenges and Opportunities: llm/challenges.md
+  - VII. Industry Landscape:
+    - Overview: industry/index.md
+    - A. Investment Banks: industry/investment-banks.md
+    - B. Hedge Funds: industry/hedge-funds.md
+    - C. Prop Trading Firms: industry/prop-shops.md
+    - D. Asset Management: industry/asset-management.md
+    - E. Retail Trading: industry/retail-trading.md
+  # - VIII. Regulatory Framework:
+  #   - Overview: regulatory/index.md
+  #   - A. Regulatory Bodies: regulatory/bodies.md
+  #   - B. Market Manipulation: regulatory/manipulation.md
+  #   - C. Trading Ethics: regulatory/ethics.md
+  #   - D. AI Ethics: regulatory/ai-ethics.md
+  - VIII. Conclusion:
+    - Overview: conclusion/index.md
+    - Core Themes: conclusion/themes.md
+    - Future Outlook: conclusion/future.md
+    - Ethical Development: conclusion/ethics.md
+
+# Theme
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+    - toc.integrate
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - content.action.edit
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: date
+  - git-committers:
+      repository: TauricResearch/Trading-Wiki
+      branch: master
